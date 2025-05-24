@@ -1,0 +1,30 @@
+version = "1.0"
+
+[main]
+name = "FTPGrab configuration"
+services = ["__APP__"]
+
+[main.server]
+name = "FTP Server configuration"
+
+    [main.server.ftp_host]
+    ask = "FTP Host adresse"
+    type = "text"
+    help = "FTP host IP or domain"
+    bind = ":__INSTALL_DIR__/ftpgrab.yml"
+
+    [main.server.ftp_port]
+    ask = "FTP port"
+    type = "number"
+    help = "FTP port. (default 21)"
+    bind = ":__INSTALL_DIR__/ftpgrab.yml"
+
+    [main.server.ftp_username]
+    ask = "FTP username"
+    type = "text"
+    bind = ":__INSTALL_DIR__/ftpgrab.yml"
+
+    [main.server.ftp_password]
+    ask = "FTP password"
+    type = "password"
+    bind = ":__INSTALL_DIR__/ftpgrab.yml"

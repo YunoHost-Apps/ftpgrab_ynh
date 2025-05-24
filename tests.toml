@@ -3,3 +3,8 @@
 test_format = 1.0
 
 [default]
+
+    ftp_host="test.rebex.net"
+    ftp_port="21"
+    ftp_username="demo"
+    ftp_password="password"
