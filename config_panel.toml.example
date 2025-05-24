@@ -6,26 +6,26 @@ services = ["__APP__"]
 
 
 [main.server]
-name = "Server configuration"
+name = "FTP Server configuration"
 
     [main.server.host]
-    ask = "Host adresse"
+    ask = "FTP Host adresse"
     type = "text"
-    help = "FTP host IP or domain."
-    bind = "registration_enabled:__INSTALL_DIR__/ftpgrab.yml"
+    help = "FTP host IP or domain"
+    bind = ":__INSTALL_DIR__/ftpgrab.yml"
 
     [main.server.port]
     ask = "FTP port"
     type = "number"
     help = "FTP port. (default 21)"
-    bind = "login_enabled:__INSTALL_DIR__/ftpgrab.yml"
+    bind = ":__INSTALL_DIR__/ftpgrab.yml"
 
     [main.server.username]
     ask = "FTP username"
     type = "text"
-    bind = "captcha_enabled:__INSTALL_DIR__/ftpgrab.yml"
+    bind = ":__INSTALL_DIR__/ftpgrab.yml"
 
     [main.server.password]
     ask = "FTP password"
     type = "password"
-    bind = "enable_user_notifications:__INSTALL_DIR__/ftpgrab.yml"
+    bind = ":__INSTALL_DIR__/ftpgrab.yml"
