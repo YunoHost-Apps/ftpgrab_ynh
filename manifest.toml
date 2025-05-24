@@ -39,8 +39,12 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/crazy-max/ftpgrab/releases/download/v7.10.0/ftpgrab_7.10.0_linux_amd64.tar.gz"
-    sha256 = "a4d80a5aaee8e4f82e7c13d4fa9b2363612b2e0b9e3e07d2770489410720ba25"
+    amd64.url = "https://github.com/crazy-max/ftpgrab/releases/download/v7.10.0/ftpgrab_7.10.0_linux_amd64.tar.gz"
+    amd64.sha256 = "a4d80a5aaee8e4f82e7c13d4fa9b2363612b2e0b9e3e07d2770489410720ba25"
+    arm64.url = "https://github.com/crazy-max/ftpgrab/releases/download/v7.10.0/ftpgrab_7.10.0_linux_arm64.tar.gz"
+    arm64.sha256 = "1ddf07e7970459209b7d79f753b86e87155588e7305cd9fc205e11207d810247"
+    armhf.url = "https://github.com/crazy-max/ftpgrab/releases/download/v7.10.0/ftpgrab_7.10.0_linux_armv7.tar.gz"
+    armhf.sha256 = "7e1aa3307bd3c64cf1575c76114270821386ae45367f001c8c28603372a81650"
 
     # autoupdate.strategy = "latest_github_tag"
 
