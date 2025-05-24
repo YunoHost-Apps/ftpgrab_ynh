@@ -4,7 +4,7 @@ test_format = 1.0
 
 [default]
 
-    ftp_host="test.rebex.net"
-    ftp_port="21"
-    ftp_username="demo"
-    ftp_password="password"
+    args.ftp_host = "test.rebex.net"
+    args.ftp_port = "21"
+    args.ftp_username = "demo"
+    args.ftp_password = "password"
