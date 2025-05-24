@@ -32,6 +32,29 @@ ram.runtime = "50M"
 
 [install]
 
+    [install.ftp_host]
+    ask.en = "FTP Host adresse"
+    ask.fr = "Adresse de l'hôte FTP"
+    type = ""
+
+    [install.ftp_port]
+    ask.en = "FTP port"
+    ask.fr = "Port FTP"
+    type = "number"
+    default = 21
+
+    [install.ftp_username]
+    ask.en = "FTP username"
+    ask.fr = "Nom d'utilisateur FTP"
+    type = ""
+    default = false
+
+    [install.ftp_password]
+    ask.en = "FTP password"
+    ask.fr = "Mot de passe FTP"
+    type = "password"
+
+
 [resources]
 
     [resources.sources]
