@@ -4,7 +4,6 @@ version = "1.0"
 name = "FTPGrab configuration"
 services = ["__APP__"]
 
-
 [main.server]
 name = "FTP Server configuration"
 
