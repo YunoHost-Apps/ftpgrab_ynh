@@ -10,8 +10,7 @@ It shall NOT be edited by hand.
 
 Grab your files periodically from a remote FTP or SFTP server
 
-[![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://example.com)
-[![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://demo.example.com)
+[![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://crazymax.dev/ftpgrab/)
 [![Version: 7.10.0~ynh1](https://img.shields.io/badge/Version-7.10.0~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/ftpgrab/)
 
 <div align="center">
