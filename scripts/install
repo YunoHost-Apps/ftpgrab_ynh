@@ -8,6 +8,25 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# RETRIEVE ARGUMENTS FROM THE MANIFEST
+#=================================================
+
+ftp_host=
+ftp_port=
+ftp_username=
+ftp_password=
+
+#=================================================
+# STORE SETTINGS FROM MANIFEST
+#=================================================
+ynh_script_progression "Storing installation settings..."
+
+ynh_app_setting_set --key=ftp_host --value=$ftp_host
+ynh_app_setting_set --key=ftp_port --value=$ftp_port
+ynh_app_setting_set --key=ftp_username --value=$ftp_username
+ynh_app_setting_set --key=ftp_password --value="$ftp_password"
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
