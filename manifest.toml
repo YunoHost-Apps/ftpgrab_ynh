@@ -5,7 +5,7 @@ packaging_format = 2
 id = "ftpgrab"
 name = "FTPGrab"
 description.en = "Grab your files periodically from a remote FTP or SFTP server"
-description.fr = "Récupérez périodiquement vos fichiers à partir d'un serveur FTP ou SFTP distant."
+description.fr = "Récupérez périodiquement vos fichiers à partir d'un serveur FTP ou SFTP distant"
 
 version = "7.10.0~ynh1"
 
@@ -13,16 +13,14 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "MIT"
-website = "https://example.com"
-demo = "https://demo.example.com"
+website = "https://crazymax.dev/ftpgrab/"
 admindoc = "https://crazymax.dev/ftpgrab/"
-userdoc = "https://yunohost.org/apps"
 code = "https://github.com/crazy-max/ftpgrab"
 
 [integration]
 yunohost = ">= 12.0.9"
 helpers_version = "2.1"
-architectures = "all"
+architectures = [ "amd64", "armhf", "arm64" ]
 multi_instance = true
 
 ldap = false

@@ -1,5 +1,5 @@
 [Unit]
-Description=FTPGrab
+Description=FTPGrab: Grab your files periodically from a remote FTP or SFTP server
 Documentation=https://crazymax.dev/ftpgrab/
 After=syslog.target
 After=network.target

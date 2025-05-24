@@ -19,17 +19,19 @@ ynh_systemctl --service="$app" --action="stop"
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env data"
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="ftpgrab.yml"
+
+chmod +x $install_dir/ftpgrab
 
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
 ynh_script_progression "Updating $app's configuration files..."
 
-ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
+ynh_config_add --template="ftpgrab.yml" --destination="$install_dir/ftpgrab.yml"
 
-chmod 400 "$install_dir/some_config_file"
-chown "$app:$app" "$install_dir/some_config_file"
+chmod 644 "$install_dir/ftpgrab.yml"
+chown "$app:$app" "$install_dir/ftpgrab.yml"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATION
@@ -38,7 +40,7 @@ ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Grab your files periodically from a remote FTP or SFTP server" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
