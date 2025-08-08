@@ -3,10 +3,10 @@ db:
 
 server:
   ftp:
-    host: test.rebex.net
-    port: 21
-    username: demo
-    password: password
+    host: __FTP_HOST__
+    port: __FTP_PORT__
+    username: __FTP_USERNAME__
+    password: __FTP_PASSWORD__
     sources:
       - /
     timeout: 5s
