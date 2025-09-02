@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+FTPGrab est une application CLI écrite en Go et livrée sous la forme d'un exécutable unique pour récupérer vos fichiers depuis un serveur FTP ou SFTP distant vers votre NAS, votre serveur ou votre ordinateur.

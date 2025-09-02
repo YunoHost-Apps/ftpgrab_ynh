@@ -12,7 +12,7 @@ RestartSec=2s
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__INSTALL_DIR__/ftpgrab --config __INSTALL_DIR__/ftpgrab.yml --schedule "*/30 * * * *" --log-level info
 Restart=always
-Environment=TZ=Europe/Paris
+Environment=TZ=__TIMEZONE__
 Environment=LOG_TIMESTAMP=false
 Environment=FTPGRAB_DB_PATH=__INSTALL_DIR__/ftpgrab.db
 
